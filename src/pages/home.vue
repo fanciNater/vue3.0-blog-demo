@@ -1,25 +1,30 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-15 15:38:11
- * @LastEditTime: 2021-03-22 16:41:15
+ * @LastEditTime: 2021-03-23 15:58:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vsCodeProjects/demo/vue-study/blogs-admin/src/views/Home.vue
 -->
 <template>
   <div class="home">
-    demo
-    <!-- <page-header></page-header> -->
+    {{ data }}
+    <page-header></page-header>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src'
-// import PageHeader from "@/components/header";
+import PageHeader from "../components/page-header/index";
 export default {
   name: "Home",
   components: {
-    // PageHeader
+    PageHeader
+  },
+  setup() {
+    const data = "测试setup 方法111";
+
+    return { data };
   }
 };
 </script>
