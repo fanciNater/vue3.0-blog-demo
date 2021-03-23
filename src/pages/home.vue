@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-15 15:38:11
- * @LastEditTime: 2021-03-23 15:58:02
+ * @LastEditTime: 2021-03-23 16:15:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vsCodeProjects/demo/vue-study/blogs-admin/src/views/Home.vue
@@ -22,7 +22,7 @@ export default {
     PageHeader
   },
   setup() {
-    const data = "测试setup 方法111";
+    const data = "测试setup 方法1112";
 
     return { data };
   }
